@@ -190,15 +190,23 @@ body{
     margin: 10px;
   }
 }
-.disconnected img{
+.disconnected{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  /* justify-content: center; */
+}
+.disconnected img{
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
   margin: 10px;
   height: 100px;
   width: 100px;
-  margin: 200px;
-
+  margin: 150px;
+}
+.disconnected-message{
+  color: white;
 }
 
 /* <..............................LongArticle.......................> */

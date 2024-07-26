@@ -8,7 +8,7 @@ export const fetchBlogs = async () => {
     return response.data;
   } catch (error) {
     console.error(error);
-    return [];
+    throw new error('Start the server');
   }
 };
 export const fetchBlogById = async (id) => {
