@@ -2,9 +2,11 @@
 import React, { useContext, useState } from "react";
 import axios from "axios";
 import { AppContext } from "../AppContext";
+// import { useNavigate } from "react-router-dom";
 
 const AddBlog = () => {
   const {refreshPage}= useContext(AppContext)
+  // const navigate = useNavigate()
   const [blog, setBlog] = useState({
     blogTitle: "",
     category: "",
@@ -23,6 +25,8 @@ const AddBlog = () => {
       console.log(response.data); 
       refreshPage()
       alert('Blog added successfully')
+      // navigate('/')
+      window.location.href ='/'
     } catch (error) {
       console.error(error); 
       alert('Failed to add blog')
